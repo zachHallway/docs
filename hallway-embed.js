@@ -25,21 +25,6 @@ function addHallwayEmbed() {
   contentArea.appendChild(hallwayEmbed);
 }
 
-// Wait for the page to load before adding the embed
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', addHallwayEmbed);
-} else {
-  addHallwayEmbed();
-}
 
-// For single-page applications, also listen for route changes
-// This ensures the embed appears on dynamically loaded pages
-let lastUrl = location.href;
-new MutationObserver(() => {
-  const url = location.href;
-  if (url !== lastUrl) {
-    lastUrl = url;
-    // Small delay to allow page content to load
-    setTimeout(addHallwayEmbed, 100);
-  }
-}).observe(document, { subtree: true, childList: true });
+addHallwayEmbed();
+
