@@ -17,7 +17,7 @@ function addHallwayEmbed() {
   
   // Create the embed element
   const hallwayEmbed = document.createElement('hallway-embed');
-  hallwayEmbed.setAttribute('character-id', 'a0a6b76d-9237-4114-9623-d8ee86de1233');
+  hallwayEmbed.setAttribute('character-id', 'character_ec3371926414494a');
   
   // Add the embed to the page (you can customize where it appears)
   // This adds it to the end of the content area
